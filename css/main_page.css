@@ -10,6 +10,11 @@ header {
     outline-color: antiquewhite;
 }
 
+.logo {
+    background-color: black;
+    position: sticky;
+}
+
 nav {
     color: black;
     background-color: black;
@@ -21,29 +26,46 @@ nav {
 }
 
 .topmenu a {
-
-    float: left;
+    position: center;
+    left: 100%;
+    float: top;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
 }
 
-ul {
+.flex-column {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    padding: 0px;
 
+    width: 200px;
+    background-color: #f1f1f1;
+    height: 100%;
+    position: fixed;
 }
 
-li a {
+.flex-column li a {
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
+}
 
+.flex-column li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+@media only screen and (max-width: 576px)
+{
+    .flex-column {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 576px;
+        background-color: #f1f1f1;
+        height: auto;
+        position: absolute;
+    }
 }
