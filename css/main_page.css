@@ -1,5 +1,5 @@
 body {
-    background-color: red;
+    background-color: #f1f1f1;
 }
 
 header {
@@ -87,6 +87,11 @@ nav {
 
 }
 
+.articles {
+    background-color: white;
+    display: block;
+}
+
 @media only screen and (max-width: 576px) {
     .articles {
         position: absolute;
@@ -99,6 +104,13 @@ footer {
     position: absolute;
     background-color: #f1f1f1;
 
+}
+
+@media only screen and (max-width: 576px) {
+    .footer {
+        position: sticky;
+        top: 500px;
+    }
 }
 
 .menu_column {
