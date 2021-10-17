@@ -1,0 +1,13 @@
+@media only screen and (max-width: 576px)
+{
+    .articles{
+        position: absolute;
+        top: 500px;
+    }
+}
+
+.end {
+    color: red;
+    position: absolute;
+    background-color: red;
+}

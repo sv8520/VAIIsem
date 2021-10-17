@@ -1,3 +1,7 @@
+body {
+    background-color: red;
+}
+
 header {
     background-color: mediumpurple;
     text-align: center;
@@ -9,6 +13,8 @@ header {
     outline-style: dashed;
     outline-color: antiquewhite;
 }
+
+
 .logo_pic {
     background-image: url(../pics/logo_w.png);
     width: 45px;
@@ -17,6 +23,7 @@ header {
     float: left;
     background-size: cover;
 }
+
 .logo {
     background-color: black;
     position: sticky;
@@ -42,14 +49,14 @@ nav {
     padding: 14px 16px;
 }
 
-.flex-column {
+.flex-column ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 200px;
     background-color: #f1f1f1;
     height: 100%; /* Full height */
-    position: fixed;
+    position: relative;
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
     float: left;
     display: inline-block;
@@ -67,8 +74,7 @@ nav {
     color: white;
 }
 
-@media only screen and (max-width: 576px)
-{
+@media only screen and (max-width: 576px) {
     .flex-column {
         list-style-type: none;
         margin: 0;
@@ -78,24 +84,28 @@ nav {
         height: auto;
         position: absolute;
     }
-}
-.articles{
-    position: absolute;
-    left: 250px;
+
 }
 
-@media only screen and (max-width: 576px)
-{
-    .articles{
+@media only screen and (max-width: 576px) {
+    .articles {
         position: absolute;
         top: 500px;
-        left: 0px;
     }
 }
 
 footer {
-    bottom: 10px;
-    float: left;
-    display: inline-block;
+    color: black;
+    position: absolute;
+    background-color: #f1f1f1;
 
 }
+
+.menu_column {
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 444px
+}
+
