@@ -1,17 +1,29 @@
 body {
-    background-color: #f1f1f1;
+    background-color: white;
+}
+
+.welcome a
+{
+
+}
+
+.welcome
+{
+
+}
+
+h3 {
+    font-size: 16px;
 }
 
 header {
     background-color: mediumpurple;
     text-align: center;
-    font-family: "Garamond";
+    font-family: Garamond;
     color: aliceblue;
     text-shadow: 1px 1px black;
-
     padding: 50px;
-    outline-style: dashed;
-    outline-color: antiquewhite;
+
 }
 
 
@@ -22,12 +34,16 @@ header {
     padding: 4px;
     float: left;
     background-size: cover;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
     background-color: black;
-    position: sticky;
+    position: relative;
+    top: 0;
     height: 48px;
+    box-shadow: 5px 1px 5px black;
 }
 
 nav {
@@ -48,6 +64,7 @@ nav {
     text-align: center;
     padding: 14px 16px;
 }
+
 
 .flex-column ul {
     list-style-type: none;
@@ -74,50 +91,117 @@ nav {
     color: white;
 }
 
-@media only screen and (max-width: 576px) {
-    .flex-column {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 576px;
-        background-color: #f1f1f1;
-        height: auto;
-        position: absolute;
-    }
-
-}
-
 .articles {
+    position: absolute;
+    top: 400px;
+    left: 220px;
     background-color: white;
     display: block;
 }
+.articles .col-md-4
+{
+    box-shadow: 0px 0px 1px darkgrey;
+}
 
-@media only screen and (max-width: 576px) {
-    .articles {
-        position: absolute;
-        top: 500px;
-    }
+.empty_pp
+{
+    background-image: url(../pics/profile_picture_user_icon_153847.png);
+    width: 45px;
+    height: 45px;
+    padding: 4px;
+    float: left;
+    background-size: cover;
+    position: sticky;
+    top: 0;
 }
 
 footer {
+    text-align: center;
     color: black;
     position: absolute;
+    top: 1000px;
+    width: 100%;
+    height: 200px;
     background-color: #f1f1f1;
 
-}
-
-@media only screen and (max-width: 576px) {
-    .footer {
-        position: sticky;
-        top: 500px;
-    }
 }
 
 .menu_column {
     background-color: #f1f1f1;
     width: 200px;
     height: 100%;
-    position: absolute;
-    top: 444px
+    position:absolute;
+    top: 444px;
+    display: block;
 }
+
+@media only screen and (max-width: 576px) {
+    .flex-column {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        height: auto;
+        position: absolute;
+    }
+
+    .flex-column li a:hover {
+        background-color: #555;
+        color: white;
+
+    }
+    .welcome{
+        position: relative;
+        top:160px;
+    }
+
+    .articles {
+        left:0;
+        position: absolute;
+        top: 650px;   }
+
+    footer {
+        position: absolute;
+        top: 1000px;
+    }
+
+    .menu_column {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+    .flex-column {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        height: auto;
+        position: absolute;
+    }
+
+    .flex-column li a:hover {
+        background-color: #555;
+        color: white;}
+
+    .articles {
+        left:0;
+        position: absolute;
+        top: 550px;
+
+    }
+    .menu_column {
+        display: none;
+    }
+
+    .welcome{
+        position: absolute;
+        top:450px;
+    }
+    }
+
+
+
 
