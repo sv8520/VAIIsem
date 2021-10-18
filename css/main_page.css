@@ -163,3 +163,10 @@ footer {
         box-shadow: 0 1px 0 #000;
     }
 }
+
+.pic1
+{
+    background-image: url(../pics/logo_w.png);
+    width: 45px;
+    height: 45px;
+}
