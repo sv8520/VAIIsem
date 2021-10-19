@@ -1,12 +1,7 @@
-body {
+body{
     background-color: white;
 }
 
-h3
-{
-    font-size: 16px;
-
-}
 header {
     background-image: url(../pics/main_photo.png);
     width: 100%;
@@ -16,9 +11,7 @@ header {
     color: aliceblue;
     text-shadow: 1px 1px black;
     padding: 50px;
-
 }
-
 
 .logo_pic {
     background-image: url(../pics/logo_w.png);
@@ -39,34 +32,6 @@ header {
     box-shadow: 0px 1px 5px black;
 }
 
-nav {
-    color: black;
-    background-color: black;
-}
-
-a.nav-link {
-    color: white ;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a.nav-link:hover {
-    color: #767499;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #767499;
-    background-color: transparent;
-    text-decoration: none;
-}
-
 .topmenu {
     overflow: hidden;
     background-color: #333;
@@ -81,52 +46,12 @@ a:hover {
     padding: 14px 16px;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.menu {
-    flex: 20%;
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-
-.menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li a{
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-
-/* Main column */
-.main {
-    flex: 80;
-    background-color: white;
-    padding: 20px;
-}
-
-
-.menu li a:hover {
-    background-color: #555;
-    color: white;
-}
-
-
 .col-md-4
 {
     box-shadow: 1px 0 0 #000;
 }
 
-.empty_pp
-{
+.empty_pp {
     background-image: url(../pics/profile_picture_user_icon_153847.png);
     width: 20px;
     height: 20px;
@@ -139,7 +64,6 @@ a:hover {
 
 footer {
     text-align: center;
-    color: black;
     background-color: #f1f1f1;
     padding: 10px;
 
@@ -155,9 +79,7 @@ footer {
 }
 
 
-
-.pic1
-{
+.pic1 {
     background-image: url(../pics/pexels-julia-m-cameron-4145190.jpg);
     width: 324px;
     max-width:100%;
@@ -165,17 +87,19 @@ footer {
     display: inline-block;
     float: left;
     background-size: cover;
-
 }
 
-.pic2
-{
+.pic2 {
     background-color: darkgrey;
     width: 324px;
     height: 200px;
     background-size: cover;
     float: right;
+}
 
+h3
+{
+    font-size: 16px;
 }
 
 h4
@@ -183,11 +107,12 @@ h4
     font-size: 16px;
     text-shadow: 0px 0px 2px darkgrey;
 }
-
-.page-item.active{
-    background-color: black;
-    color: black;
+.pagination > .active > a
+{
+    background-color: #767499 !important;
+    border: solid 1px #767499 !important;
 }
+
 
 @media screen and (max-width: 768px) {
     .row {
@@ -200,3 +125,78 @@ h4
         box-shadow: 0 -1px 0 #000;
     }
 }
+
+
+
+nav {
+    color: black;
+    background-color: black;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.nav-link {
+    color: white ;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.nav-link:hover {
+    color: #767499;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #767499;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    background-image: linear-gradient(to right, #d5d5d5, #f1f1f1, #d5d5d5);
+    box-shadow: 0 1px 0 #d5d5d5;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu li a {
+    display: block;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
+.main {
+    flex: 80%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: -10px 0 10px -10px darkgrey;
+
+}
+
+.menu li a:hover {
+    background-color: gray;
+    color: white;
+    box-shadow: 0px 0px 4px grey;
+}
+
+
