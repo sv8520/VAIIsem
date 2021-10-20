@@ -1,3 +1,5 @@
+
+
 header {
     background-image: url(../pics/main_photo.png);
     width: 100%;
@@ -33,9 +35,7 @@ header {
 }
 
 .topmenu a {
-    position: center;
     left: 100%;
-    float: top;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -119,16 +119,12 @@ h4
     border: solid 1px #767499 !important;
 }
 
-
 .input-group
 {
     width: 250px;
     padding: 5px;
 }
-button {
-    outline: 1px purple solid;
-    color: purple;
-}
+
 
 @media screen and (max-width: 767px) {
     .row {
@@ -136,13 +132,13 @@ button {
     }
 
     .pagination{
-        position: center;
+        justify-content: center
     }
 
-    .col-md-4
+    .col-md-3
     {
-        padding: 20px;
-        height: 200px;
+        padding: 25px;
+        height: 250px;
     }
 
     .menu li
