@@ -10,7 +10,6 @@ header {
 }
 
 .logo_pic {
-    background-image: url(../pics/logo_w.png);
     width: 45px;
     height: 45px;
     padding: 4px;
@@ -42,20 +41,24 @@ header {
     padding: 14px 16px;
 }
 
-.col-md-4
+.col-md-3
 {
-    box-shadow: 1px 0 0 #000;
     box-sizing: border-box;
-    border: 3px solid transparent;
+    border: 1px solid #9488ad;
+    outline: 4px solid transparent;
     background-clip:padding-box;
-
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #d5d5d5;
 }
+
 
 .empty_pp {
     background-image: url(../pics/profile_picture_user_icon_153847.png);
     width: 20px;
     height: 20px;
     padding: 25px;
+    margin: 5px;
     float: left;
     background-size: cover;
     top: 0;
@@ -127,15 +130,29 @@ button {
     color: purple;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .row {
         flex-direction: column;
     }
 
+    .pagination{
+        position: center;
+    }
 
     .col-md-4
     {
-        box-shadow: 0 -1px 0 #000;
+        padding: 20px;
+        height: 200px;
+    }
+
+    .menu li
+    {
+        border-bottom: 1px solid darkgrey;
+    }
+
+    .menu
+    {
+        background-image: linear-gradient(to right, #d5d5d5, #f1f1f1, #d5d5d5);
     }
 }
 
